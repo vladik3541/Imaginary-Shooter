@@ -20,12 +20,9 @@ public abstract class BaseProjectile : MonoBehaviour, IProjectile
         float distance = Vector3.Distance(transform.position, hit.point);
         float remainingDistance = distance;
 
-        while (remainingDistance > 0)
+        while (Vector3.Distance(transform.position, hit.point) > 0.1f)
         {
-            transform.position = Vector3.Lerp(startPosition, hit.point, 1 - (remainingDistance / distance));
-
-            remainingDistance -= speed * Time.deltaTime;
-
+            transform.position = Vector3.MoveTowards(transform.position, hit.point, speed * Time.deltaTime);
             yield return null;
         }
         transform.position = hit.point;
