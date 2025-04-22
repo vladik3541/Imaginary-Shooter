@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e28b832865efe742a54555f74052fc2, type: 3}
+  m_Name: Projectile
+  m_EditorClassIdentifier: 
+  normalProjectilePrefab: {fileID: 7791727375262307035, guid: 4de3011e86fa059489a1cf3823b5d177,
+    type: 3}
+  explosiveProjectilePrefab: {fileID: 6324129675369301688, guid: a34743468ea7b1c43bddc1e14e101398,
+    type: 3}
+  ricochetProjectilePrefab: {fileID: 56184082277983790, guid: b8bf47aac22f7e84f85f6f9c24e03d64,
+    type: 3}
